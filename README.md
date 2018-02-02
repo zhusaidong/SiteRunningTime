@@ -1,0 +1,2 @@
+# SiteRunningTime
+typecho plugin
