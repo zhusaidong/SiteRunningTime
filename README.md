@@ -1,4 +1,4 @@
-# 显示系统运行时长
+# 显示系统运行时长 ![download](https://img.shields.io/github/downloads/zhusaidong/SiteRunningTime/total.svg)
 
 Typecho插件：在底部显示系统的运行时长
 
