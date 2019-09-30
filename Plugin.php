@@ -6,7 +6,7 @@ if(!defined('__TYPECHO_ROOT_DIR__')) exit;
 * @package SiteRunningTime
 * @author 上官元恒
 * @link https://blog.zhusaidong.cn
-* @version 1.5.0
+* @version 1.5.1
 */
 class SiteRunningTime_Plugin implements Typecho_Plugin_Interface
 {
@@ -59,7 +59,7 @@ class SiteRunningTime_Plugin implements Typecho_Plugin_Interface
 		$startTimeText            = str_replace(array_keys($text),array_values($text),$srt->srt_text);
 		
 		//输出
-		echo '<script src="'.$pluginUrl.'/SiteRunningTime/js/SiteRunningTime.js"></script>'."\n";
+		echo '<script src="'.$pluginUrl.'/SiteRunningTime/js/SiteRunningTime.js?v=1.5.1"></script>'."\n";
 		echo
 <<<eof
 <style>
