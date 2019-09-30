@@ -11,9 +11,10 @@ var SiteRunningTime = function(config)
 	}
 	var refreshTime = function(startTime)
 	{
-		var s1 = new Date(startTime.replace(/-/g, " / ")),
+		//fix bug#2 在ios中使用时间戳加减使用 Data.parse()转换
+		var s1 = Date.parse(startTime.replace(/-/g, "/")),
 		s2 = new Date(),
-		runTime = parseInt((s2.getTime() - s1.getTime()) / 1000);
+		runTime = parseInt((s2.getTime() - s1) / 1000);
 
 		var year = month = day = hour = minute = second = 0;
 		
